@@ -1,0 +1,30 @@
+version: '3.7'
+services: 
+  nginx: 
+   image: nginx
+   volumes:
+     - "./nginx.conf:/etc/nginx/nginx.conf"
+   ports:
+     - "80:80"
+     - "443:443"
+   depends_on:
+     - front 
+     - login
+  front: 
+    image: feedback-forms-front
+    build: ./front
+  login: 
+    image: feedback-forms-login
+    build: ./login
+    depends_on: 
+      - consumer
+  consumer: 
+    image: feedback-forms-consumer
+    build: ./consumer
+    depends_on: 
+      - mongo
+      - queue
+  mongo:
+    image: mongo
+  queue:
+    image: webcenter/activemq
