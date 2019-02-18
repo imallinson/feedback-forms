@@ -9,18 +9,30 @@ services:
      - "443:443"
    depends_on:
      - front 
-     - login
+     - accounts
+     - submit
+     - display
   front: 
     image: feedback-forms-front
-    build: ./front
-  login: 
-    image: feedback-forms-login
-    build: ./login
+    build: ./feedback-forms-front
+  accounts: 
+    image: feedback-forms-accounts
+    build: ./feedback-forms-accounts
+    depends_on: 
+      - consumer
+  submit: 
+    image: feedback-forms-submit
+    build: ./feedback-forms-submit
+    depends_on: 
+      - consumer
+  display: 
+    image: feedback-forms-display
+    build: ./feedback-forms-display
     depends_on: 
       - consumer
   consumer: 
     image: feedback-forms-consumer
-    build: ./consumer
+    build: ./feedback-forms-consumer
     depends_on: 
       - mongo
       - queue
