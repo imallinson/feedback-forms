@@ -26,7 +26,7 @@
 
 
 # 2. Architecture
-
+![architecture-diagram](architecture-diagram.png)
 
 # 3. The Micro-Services
 
