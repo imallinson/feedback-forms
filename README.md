@@ -1,17 +1,18 @@
 ## Index
 1. [Project Definition](#1-Project-Definition)
+
 2. [Architecture](#2-Architecture)
    * [High Level Architecture Diagram](#High-level-architecture-diagram)
-   * [The stack](#The-Stack)
+   * [The Stack](#The-Stack)
    * [Springboot API Structure](#SpringBoot-API-Structure)
      
 3. [The Micro-Services](#3-The-Micro-Services)
    * [React Front End](#React-Front-End)
-   * [AccountApi](#AccountApi)
-   * [AccountNumberGeneratorApi](#AccountNumberGeneratorApi)
-   * [AccountPrizeApi](#AccountPrizeApi)
+   * [Account API](#Account-API)
+   * [Form Submit API](#Form-Submit-API)
+   * [Data Display API](#Data-Display-API)
    * [ActiveMQ](#ActiveMQ)
-   * [AccountConsumer](#AccountConsumer)
+   * [Consumer](#Consumer)
    * [MongoDB](#MongoDB)
      
 4. [Testing](#4-Testing)
