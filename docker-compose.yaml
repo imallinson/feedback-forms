@@ -1,17 +1,17 @@
 version: '3.7'
 services: 
   nginx: 
-   image: nginx
-   volumes:
-     - "./nginx.conf:/etc/nginx/nginx.conf"
-   ports:
-     - "80:80"
-     - "443:443"
-   depends_on:
-     - front 
-     - accounts
-     - submit
-     - display
+    image: nginx
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - front 
+      - accounts
+      - submit
+      - display
   front: 
     image: feedback-forms-front
     build: ./feedback-forms-front
