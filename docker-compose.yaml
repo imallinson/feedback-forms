@@ -18,18 +18,12 @@ services:
   accounts: 
     image: feedback-forms-accounts
     build: ./feedback-forms-accounts
-    depends_on: 
-      - consumer
   submit: 
     image: feedback-forms-submit
     build: ./feedback-forms-submit
-    depends_on: 
-      - consumer
   display: 
     image: feedback-forms-display
     build: ./feedback-forms-display
-    depends_on: 
-      - consumer
   consumer: 
     image: feedback-forms-consumer
     build: ./feedback-forms-consumer
