@@ -22,9 +22,6 @@ services:
   submit: 
     image: feedback-forms-submit
     build: ./feedback-forms-submit
-  display: 
-    image: feedback-forms-display
-    build: ./feedback-forms-display
   consumer: 
     image: feedback-forms-consumer
     build: ./feedback-forms-consumer
