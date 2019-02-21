@@ -22,6 +22,9 @@ services:
   submit: 
     image: feedback-forms-submit
     build: ./feedback-forms-submit
+  retriever:
+    image: feedback-forms-retriever
+    build: ./feedback-forms-retriever
   consumer: 
     image: feedback-forms-consumer
     build: ./feedback-forms-consumer

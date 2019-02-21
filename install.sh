@@ -5,5 +5,6 @@ git clone https://github.com/imallinson/feedback-forms-submit
 git clone https://github.com/imallinson/feedback-forms-consumer
 git clone https://github.com/imallinson/feedback-forms-front
 git clone https://github.com/imallinson/feedback-forms-gateway
+git clone https://github.com/imallinson/feedback-forms-retriever
 
 docker-compose up -d

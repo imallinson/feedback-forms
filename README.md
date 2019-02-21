@@ -2,36 +2,62 @@
 1. [Project Definition](#1-Project-Definition)
 
 2. [Architecture](#2-Architecture)
-   * [High Level Architecture Diagram](#High-level-architecture-diagram)
-   * [The Stack](#The-Stack)
-   * [Springboot API Structure](#SpringBoot-API-Structure)
      
-3. [The Micro-Services](#3-The-Micro-Services)
-   * [React Front End](#React-Front-End)
-   * [Account API](#Account-API)
-   * [Form Submit API](#Form-Submit-API)
-   * [Data Display API](#Data-Display-API)
-   * [ActiveMQ](#ActiveMQ)
-   * [Consumer](#Consumer)
-   * [MongoDB](#MongoDB)
+3. [Containers](#3-Containers)
+  * [NGINX](#NGINX)
+  * [React Front End](#React-Front-End)
+  * [Gateway](#Gateway)
+  * [Accounts](#Accounts)
+  * [Form Submit](#Form-Submit)
+  * [ActiveMQ](#ActiveMQ)
+  * [Consumer](#Consumer)
+  * [MongoDB](#MongoDB)
      
 4. [Testing](#4-Testing)
-   * [Unit Testing](#Unit-Testing)
+  * [Unit Testing](#Unit-Testing)
+  * [Acceptance Testing](#Acceptance-Testing)
 
 5. [How To Run](#5-How-To-Run)
-   * [Prerequisites](#Prerequisites)
-   * [Steps](#Steps)
+  * [Prerequisites](#Prerequisites)
+  * [Steps](#Steps)
 
 # 1. Project Definition
 
 
 # 2. Architecture
 ![architecture-diagram](architecture-diagram.png)
+Each white box in the diagram is a docker container
 
-# 3. The Micro-Services
+# 3. Containers
+## NGINX
+NGINX handles routing the user to the front end and routing the front end requests to the Gateway API. It also redirects all traffic to HTTPS to implement SSL for all connections.
+
+## React
+[ReactJS](https://reactjs.org/) has been used to build the front end for the app. It utilises a single page with routes to direct to the various views in the app.
+
+## Gateway
+
+
+## Accounts
+This microservice deals with both account creation and retrieval. Account data is retrieved for logging into the app as well as when feedback is viewed.
+
+## Form Submit
+This microservice deals with persisting the feedback forms sent from the front end.
+
+## ActiveMQ
+
+
+## Consumer
+This microservice listens to the queue and sends any requests in the queue to the database.
+
+## MongoDB
 
 
 # 4. Testing
+## Unit Testing
+
+
+## Acceptance Testing
 
 
 # 5. How To Run
