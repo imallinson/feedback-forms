@@ -4,28 +4,32 @@
 2. [Architecture](#2-Architecture)
      
 3. [Containers](#3-Containers)
-  * [NGINX](#NGINX)
-  * [React Front End](#React-Front-End)
-  * [Gateway](#Gateway)
-  * [Accounts](#Accounts)
-  * [Form Submit](#Form-Submit)
-  * [ActiveMQ](#ActiveMQ)
-  * [Consumer](#Consumer)
-  * [MongoDB](#MongoDB)
+   * [NGINX](#NGINX)
+   * [React Front End](#React-Front-End)
+   * [Gateway](#Gateway)
+   * [Accounts](#Accounts)
+   * [Form Submit](#Form-Submit)
+   * [Data Retriver](#Data-Retriever)
+   * [ActiveMQ](#ActiveMQ)
+   * [Consumer](#Consumer)
+   * [MongoDB](#MongoDB)
      
 4. [Testing](#4-Testing)
-  * [Unit Testing](#Unit-Testing)
-  * [Acceptance Testing](#Acceptance-Testing)
+   * [Unit Testing](#Unit-Testing)
+   * [Acceptance Testing](#Acceptance-Testing)
 
 5. [How To Run](#5-How-To-Run)
-  * [Prerequisites](#Prerequisites)
-  * [Steps](#Steps)
+   * [Prerequisites](#Prerequisites)
+   * [Steps](#Steps)
+
+6. [Continuous Integration](#6-Continuous-Integration)
 
 # 1. Project Definition
 
 
 # 2. Architecture
 ![architecture-diagram](architecture-diagram.png)
+
 Each white box in the diagram is a docker container
 
 # 3. Containers
@@ -43,6 +47,9 @@ This microservice deals with both account creation and retrieval. Account data i
 
 ## Form Submit
 This microservice deals with persisting the feedback forms sent from the front end.
+
+## Data Retriever
+
 
 ## ActiveMQ
 
@@ -69,3 +76,6 @@ This microservice listens to the queue and sends any requests in the queue to th
 ## Steps
 1. Clone this repo
 2. Run the install.sh script
+
+# 6. Continuous Integration
+
