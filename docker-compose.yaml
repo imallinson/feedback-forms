@@ -19,6 +19,9 @@ services:
   accounts: 
     image: feedback-forms-accounts
     build: ./feedback-forms-accounts
+  cohorts:
+    image: feedback-forms-cohorts
+    build: ./feedback-forms-cohorts
   submit: 
     image: feedback-forms-submit
     build: ./feedback-forms-submit
