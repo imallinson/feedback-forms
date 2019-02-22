@@ -8,6 +8,7 @@
    * [React Front End](#React-Front-End)
    * [Gateway](#Gateway)
    * [Accounts](#Accounts)
+   * [Cohorts](#Cohorts)
    * [Form Submit](#Form-Submit)
    * [Data Retriver](#Data-Retriever)
    * [ActiveMQ](#ActiveMQ)
@@ -44,6 +45,9 @@ NGINX handles routing the user to the front end and routing the front end reques
 
 ## Accounts
 This microservice deals with both account creation and retrieval. Account data is retrieved for logging into the app as well as when feedback is viewed.
+
+## Cohorts
+
 
 ## Form Submit
 This microservice deals with persisting the feedback forms sent from the front end.
