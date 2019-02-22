@@ -1,9 +1,9 @@
 ## Contributors
-[Joel Halford](https://github.com/JoelHalford): Front End
-[Fortune Osadolor](https://github.com/FortunexFortune): Back End
-[Ahmed Abid Ali](https://github.com/ahmedQAC): Back End
-[Taoheed Afolayan](https://github.com/Taoheed1): Testing
-[Ian Mallinson](https://github.com/imallinson): CI/CD
+* [Joel Halford](https://github.com/JoelHalford): Front End
+* [Fortune Osadolor](https://github.com/FortunexFortune): Back End
+* [Ahmed Abid Ali](https://github.com/ahmedQAC): Back End
+* [Taoheed Afolayan](https://github.com/Taoheed1): Testing
+* [Ian Mallinson](https://github.com/imallinson): CI/CD
 
 ## Index
 1. [Project Definition](#1-Project-Definition)
