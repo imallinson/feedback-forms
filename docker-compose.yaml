@@ -10,7 +10,7 @@ services:
       - "443:443"
     depends_on:
       - front
-      - gateway 
+      - gateway
   front: 
     image: feedback-forms-front
     build: ./feedback-forms-front
@@ -32,9 +32,6 @@ services:
   consumer: 
     image: feedback-forms-consumer
     build: ./feedback-forms-consumer
-    depends_on: 
-      - mongo
-      - queue
   mongo:
     image: mongo
   queue:
