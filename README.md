@@ -51,16 +51,16 @@ NGINX handles routing the user to the front end and routing the front end reques
 
 
 ## Accounts
-This microservice deals with both account creation and retrieval. Account data is retrieved for logging into the app as well as when feedback is viewed.
+This microservice deals with both account creation. Emails are validated and admin access is granted based on the email domain.
 
 ## Cohorts
-
+This microservice deals with creating new cohorts to add trainees to.
 
 ## Form Submit
 This microservice deals with persisting the feedback forms sent from the front end.
 
 ## Data Retriever
-
+This microservice deals with getting the accounts, cohorts and feedback forms using a variety of criteria out of the database as well as adding trainees to a cohort.
 
 ## ActiveMQ
 
