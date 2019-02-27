@@ -94,7 +94,8 @@ Stores all the data for the app.
 
 ## Steps
 1. Clone this repo
-2. Run the install.sh script
+2. Modify the location for the ssl certificates in the nginx.conf file or use the no ssl branch
+3. Run the install.sh script
 
 # 6. Continuous Integration
 ## Docker
