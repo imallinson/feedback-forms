@@ -68,13 +68,13 @@ This microservice deals with persisting the feedback forms sent from the front e
 This microservice deals with getting the accounts, cohorts and feedback forms using a variety of criteria out of the database as well as adding trainees to a cohort.
 
 ## ActiveMQ
-Queues requests from the APIs that are trying to persist data to the database.
+[ActiveMQ](http://activemq.apache.org/) queues requests from the APIs that are trying to persist data to the database.
 
 ## Queue Consumer
 This microservice listens to the queue and sends any requests in the queue to the database.
 
 ## MongoDB
-Stores all the data for the app.
+[MongoDB](https://www.mongodb.com/) stores all the data for the app.
 
 # 4. Testing
 ## Unit Testing
@@ -99,10 +99,10 @@ Stores all the data for the app.
 
 # 6. Continuous Integration
 ## Docker
-Having all the microservices in containers makes the app more portable. The containers being in a docker network allows the various microservices to communicate without being exposed to external access.
+Having all the microservices in [Docker](https://www.docker.com/) containers makes the app more portable. The containers being in a docker network allows the various microservices to communicate without being exposed to external access.
 
 ## Jenkins
-Jenkins pipelines have been used to automate building, testing and deploying all the microservices whenever changes are made to the master Git branch.
+[Jenkins](https://jenkins.io/) pipelines have been used to automate building, testing and deploying all the microservices whenever changes are made to the master Git branch.
 
 # 7. Repositories
 * [Front End](https://github.com/imallinson/feedback-forms-front)
