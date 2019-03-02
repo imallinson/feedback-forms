@@ -4,7 +4,6 @@ services:
     image: nginx
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf"
-      - "/etc/letsencrypt/:/etc/letsencrypt/"
     ports:
       - "80:80"
       - "443:443"
@@ -12,26 +11,19 @@ services:
       - front
       - gateway
   front: 
-    image: feedback-forms-front
-    build: ./feedback-forms-front
+    image: imallinson/feedback-forms-front
   gateway:
-    image: feedback-forms-gateway
-    build: ./feedback-forms-gateway
+    image: imallinson/feedback-forms-gateway
   accounts: 
-    image: feedback-forms-accounts
-    build: ./feedback-forms-accounts
+    image: imallinson/feedback-forms-accounts
   cohorts:
-    image: feedback-forms-cohorts
-    build: ./feedback-forms-cohorts
+    image: imallinson/feedback-forms-cohorts
   submit: 
-    image: feedback-forms-submit
-    build: ./feedback-forms-submit
+    image: imallinson/feedback-forms-submit
   retriever:
-    image: feedback-forms-retriever
-    build: ./feedback-forms-retriever
+    image: imallinson/feedback-forms-retriever
   consumer: 
-    image: feedback-forms-consumer
-    build: ./feedback-forms-consumer
+    image: imallinson/feedback-forms-consumer
   mongo:
     image: mongo
   queue:
